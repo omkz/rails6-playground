@@ -18,3 +18,7 @@ require("packs/richtext")
 // const imagePath = (name) => images(name, true)
 
 import "controllers"
+import ActiveStorageDragAndDrop from 'active_storage_drag_and_drop'
+
+ActiveStorageDragAndDrop.start()
+

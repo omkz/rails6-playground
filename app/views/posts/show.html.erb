@@ -11,7 +11,9 @@
 </p>
 <p>
 	Images:
-    <%= image_tag @post.image %>
+    <% @post.images.each do |i| %>
+      <%= image_tag i %>
+    <% end %>
 </p>
 
 <%= link_to 'Edit', edit_post_path(@post) %> |

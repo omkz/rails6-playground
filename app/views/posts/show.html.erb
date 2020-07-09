@@ -11,8 +11,8 @@
 </p>
 <p>
 	Images:
-    <% @post.images.each do |i| %>
-      <%= image_tag i %>
+    <% @post.images.each do |img| %>
+      <%= image_tag img, width: 280 %>
     <% end %>
 </p>
 

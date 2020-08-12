@@ -4,6 +4,7 @@
   <%= f.text_field :title %>
  
   <%= f.label :image %>
+  <%= f.hidden_field :image, value: @photo.cached_image_data %>
   <%= f.file_field :image %>
  
   <div>

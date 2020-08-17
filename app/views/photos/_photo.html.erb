@@ -2,5 +2,5 @@
   <% if photo.image_data? %>
     <%= image_tag photo.image_url %>
   <% end %>
-  <p><%= photo.title %> | <%= link_to 'Edit', edit_photo_path(photo) %></p>
+  <p><%= photo.title %> | <%= link_to 'Edit', edit_photo_path(photo) %> | <%= link_to 'Destroy', photo_path(photo), method: :delete, data: { confirm: 'Are you sure?' } %></p>
 </div>
